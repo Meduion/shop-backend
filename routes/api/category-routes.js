@@ -41,7 +41,7 @@ router.post('/', (req, res) => {
   // create a new category
   /* req.body should look like this...
   {
-    category_name: "Airplanes",
+    "category_name": "Vehicles"
   }
   */
   Category.create(req.body)
