@@ -58,7 +58,7 @@ router.post('/', (req, res) => {
       }
     res.status(200).json(tag);
     })
-    .then((productTagIds) => res.status(200).json(productTagIds))
+    .then((productTagIds) => res.json(productTagIds))
     .catch((err) => {
       console.log(err);
       res.status(400).json(err);
